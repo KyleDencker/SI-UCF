@@ -1,1 +1,3 @@
 Free sounds: http://soundbible.com/
+
+Particle effects: http://libgdx.badlogicgames.com/tools.html
