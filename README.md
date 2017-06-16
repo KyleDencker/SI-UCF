@@ -8,4 +8,4 @@
 
 * Free sounds: http://soundbible.com/
 
-* Particle effects: http://libgdx.badlogicgames.com/tools.html
+* Particle effects and fonts: http://libgdx.badlogicgames.com/tools.html
