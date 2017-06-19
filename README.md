@@ -11,3 +11,5 @@
 * Particle effects and fonts: http://libgdx.badlogicgames.com/tools.html
 
 * Box2D: https://github.com/libgdx/libgdx/wiki/Box2d
+
+* Assignment 2: https://classroom.github.com/group-assignment-invitations/eedb5726bbdeab29a0a62af2439a5223
