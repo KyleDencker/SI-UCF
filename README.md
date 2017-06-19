@@ -9,3 +9,5 @@
 * Free sounds: http://soundbible.com/
 
 * Particle effects and fonts: http://libgdx.badlogicgames.com/tools.html
+
+* Box2D: https://github.com/libgdx/libgdx/wiki/Box2d
