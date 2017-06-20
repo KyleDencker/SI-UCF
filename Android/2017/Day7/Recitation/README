@@ -1,0 +1,1 @@
+Created a DragProcessor (extension of InputAdapter, which is an implementation of InputProcessor).
