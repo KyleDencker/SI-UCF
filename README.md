@@ -13,3 +13,5 @@
 * Box2D: https://github.com/libgdx/libgdx/wiki/Box2d
 
 * Assignment 2: https://classroom.github.com/group-assignment-invitations/eedb5726bbdeab29a0a62af2439a5223
+
+* Assignment 3: https://classroom.github.com/group-assignment-invitations/edbf83fc7f9468d6d0bc090065c65cd0
