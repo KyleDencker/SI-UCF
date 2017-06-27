@@ -22,6 +22,8 @@ public class MainScreen implements Screen {
 	public  Random rand;
 	public  char type;
 	public  int startX, startY, endX, endY;
+	public boolean searching = false;
+	private BFS bfs;
 
 	public MainScreen(GameHandler g) {
 		this.game = g;
@@ -45,6 +47,8 @@ public class MainScreen implements Screen {
 
 		grid = new char[12][20];
 		for (char[] arr : grid) Arrays.fill(arr, 'F');
+
+		bfs = new BFS(this);
 	}
 
 	public void render(float delta) {
@@ -67,31 +71,37 @@ public class MainScreen implements Screen {
 		}
 		batch.end();
 
+		if (bfs.isStarted) {
+			bfs.go();
+		}
+
 		if (Gdx.input.isTouched()) {
 			Vector3 touchPos = new Vector3(Gdx.input.getX(0), Gdx.input.getY(0), 0);
 			camera.unproject(touchPos);
 			int y = (int)(touchPos.y) / GameHandler.SQUARE_DIMENSION;
 			int x = (int)(touchPos.x) / GameHandler.SQUARE_DIMENSION;
-			if (x == startX && y == startY && type != 'S') {
-				startX = startY = -1;
-			}
-			if (x == endX && y == endY && type != 'E') {
-				endX = endY = -1;
-			}
-			grid[y][x] = type;
-			if (type == 'S' && (startX != x || startY != y)) {
-				if (isValid(startX, startY)) {
-					grid[startY][startX] = 'F';
+			if (isValid(x, y)) {
+				if (x == startX && y == startY && type != 'S') {
+					startX = startY = -1;
 				}
-				startX = x;
-				startY = y;
-			}
-			if (type == 'E' && (endX != x || endY != y)) {
-				if (isValid(endX, endY)) {
-					grid[endY][endX] = 'F';
+				if (x == endX && y == endY && type != 'E') {
+					endX = endY = -1;
 				}
-				endX = x;
-				endY = y;
+				grid[y][x] = type;
+				if (type == 'S' && (startX != x || startY != y)) {
+					if (isValid(startX, startY)) {
+						grid[startY][startX] = 'F';
+					}
+					startX = x;
+					startY = y;
+				}
+				if (type == 'E' && (endX != x || endY != y)) {
+					if (isValid(endX, endY)) {
+						grid[endY][endX] = 'F';
+					}
+					endX = x;
+					endY = y;
+				}
 			}
 		}
 
@@ -108,7 +118,10 @@ public class MainScreen implements Screen {
 			type = 'F';
 		}
 		if (Gdx.input.isKeyJustPressed(Input.Keys.B)) {
-			BFS.go(this);
+			if (!bfs.isStarted) bfs.init();
+		}
+		if (Gdx.input.isKeyJustPressed(Input.Keys.R)) {
+			reset();
 		}
 	}
 
@@ -116,22 +129,12 @@ public class MainScreen implements Screen {
 		return (x >= 0 && x < 20 && y >= 0 && y < 12);
 	}
 
-	public void draw() {
-		Gdx.gl.glClearColor(0, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
-		batch.setProjectionMatrix(camera.combined);
-		batch.begin();
-		for (int y = 0; y < 12; y++) {
-			for (int x = 0; x < 20; x++) {
-				if (grid[y][x] == 'F') batch.draw(whiteSquare, 40*x, 40*y);
-				if (grid[y][x] == 'V') batch.draw(blackSquare, 40*x, 40*y);
-				if (grid[y][x] == 'S') batch.draw(blueSquare, 40*x, 40*y);
-				if (grid[y][x] == 'E') batch.draw(greenSquare, 40*x, 40*y);
-				if (grid[y][x] == 'W') batch.draw(graySquare, 40*x, 40*y);
+	public void reset() {
+		for (int y = 0; y < GameHandler.ROWS; y++) {
+			for (int x = 0; x < GameHandler.COLUMNS; x++) {
+				if (grid[y][x] == 'V') grid[y][x] = 'F';
 			}
 		}
-		batch.end();
 	}
 
 	public void resize(int width, int height) {
