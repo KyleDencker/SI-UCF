@@ -1,3 +1,5 @@
+(Don't delete this Dencker, it's for one of the students.)
+
 Vector2 touch = input.getTouch();
 float y = touch.y;
 float x = touch.x;
