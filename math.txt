@@ -1,0 +1,19 @@
+Vector2 touch = input.getTouch();
+float y = touch.y;
+float x = touch.x;
+float dist = dist(frog.x, frog.y, x, y);
+if (dist > radius) {
+	float angle = Math.atan2(y, x);
+	dist = radius;
+	y = radius * Math.sin(angle);
+	x = radius * Math.cos(angle);
+}
+
+
+
+
+float dist(float x1, float y1, float x2, float y2) {
+	float ans = (x1 - x2) * (x1 - x2);
+	ans += (y1 - y2) * (y1 - y2);
+	return (float)Math.sqrt(ans);
+}
