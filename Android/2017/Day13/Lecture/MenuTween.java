@@ -22,6 +22,7 @@ public class MenuTween implements Screen {
     SpriteBatch batch;
     OrthographicCamera camera;
     int state = 0;
+    boolean facingLeft = true;
 
     float time = 0;
 
@@ -72,6 +73,23 @@ public class MenuTween implements Screen {
             if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
                 state = 2;
                 time = 0;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.F)){
+                sprite.flip(true, false);
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.A)){
+                sprite.setPosition(sprite.getX()-3, sprite.getY());
+                if (!facingLeft) {
+                    sprite.flip(true, false);
+                    facingLeft = true;
+                }
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.D)){
+                sprite.setPosition(sprite.getX()+3, sprite.getY());
+                if (facingLeft) {
+                    sprite.flip(true, false);
+                    facingLeft = false;
+                }
             }
         } else if (state == 2) {
             if (time < 3f/8f) {
