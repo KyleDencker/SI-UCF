@@ -4,7 +4,7 @@
 
 * Assignment 1: http://bit.ly/SIUCF2017-A1B
 
-* Final Game Submissions: https://itch.io/jam/4365/preview
+* Final Game Submissions: https://itch.io/jam/siucf-2017
 
 * Free sounds: http://soundbible.com/
 
