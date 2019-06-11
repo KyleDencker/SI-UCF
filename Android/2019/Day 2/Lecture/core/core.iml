@@ -27,6 +27,9 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Gradle: gdx-box2d-1.9.9" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: gdx-ai-1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: gdx-bullet-1.9.9" level="project" />
     <orderEntry type="library" exported="" name="Gradle: gdx-1.9.9" level="project" />
   </component>
 </module>
