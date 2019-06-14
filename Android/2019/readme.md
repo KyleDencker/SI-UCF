@@ -24,6 +24,12 @@ Game Jam #1:
 
 https://itch.io/jam/2019-siucf-jam-1-chickens
 
+# Important Links
+
+Create a Runnable Jar file:
+
+https://libgdx.badlogicgames.com/documentation/gettingstarted/Packaging.html#packaging-for-desktop
+
 # Video Notes
 
 Videos will go here. 
