@@ -13,10 +13,16 @@ Kyle
 Make sure you check each day for the current assignment.
 
 Assignment #0: Rooms
+
 https://classroom.github.com/a/LUB4K4BV
 
 Assignment #1: Chickens
+
 https://classroom.github.com/g/olA4Wdvg
+
+Game Jam #1:
+
+https://itch.io/jam/2019-siucf-jam-1-chickens
 
 # Video Notes
 
