@@ -30,6 +30,14 @@ Create a Runnable Jar file:
 
 https://libgdx.badlogicgames.com/documentation/gettingstarted/Packaging.html#packaging-for-desktop
 
+Reading and Writing Files
+
+https://github.com/libgdx/libgdx/wiki/File-handling
+
+libGDX Tools
+
+https://libgdx.badlogicgames.com/tools.html
+
 # Video Notes
 
 Videos will go here. 
