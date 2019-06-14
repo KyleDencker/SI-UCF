@@ -22,7 +22,9 @@ https://classroom.github.com/g/olA4Wdvg
 
 Game Jam #1:
 
-https://itch.io/jam/2019-siucf-jam-1-chickens
+https://itch.io/jam/2019-siucf-jam-1-chickens 
+
+Directions: https://docs.google.com/document/d/1tZkgoBxUKKkVPZauNmJ-8z8Q4czGaMf8IJMVjJN2UB4/edit?usp=sharing
 
 # Important Links
 
