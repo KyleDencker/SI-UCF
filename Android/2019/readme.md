@@ -26,6 +26,20 @@ https://itch.io/jam/2019-siucf-jam-1-chickens
 
 Directions: https://docs.google.com/document/d/1tZkgoBxUKKkVPZauNmJ-8z8Q4czGaMf8IJMVjJN2UB4/edit?usp=sharing
 
+Assignment #2: Arcade
+
+https://classroom.github.com/g/JWoFmpxd
+
+Assignment #3: Cake
+
+https://classroom.github.com/g/gnYv07Lf
+
+Assignment #4: Presentation 
+
+https://classroom.github.com/g/9H5HbKIZ
+
+
+
 # Important Links
 
 Create a Runnable Jar file:
