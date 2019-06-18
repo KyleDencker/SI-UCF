@@ -30,13 +30,25 @@ Assignment #2: Arcade
 
 https://classroom.github.com/g/JWoFmpxd
 
+Game Jam #2:
+
+https://itch.io/jam/2019-siucf-jam-2-arcade
+
 Assignment #3: Cake
 
 https://classroom.github.com/g/gnYv07Lf
 
+Game Jam #3:
+
+https://itch.io/jam/2019-siucf-jam-3-cake
+
 Assignment #4: Presentation 
 
 https://classroom.github.com/g/9H5HbKIZ
+
+Final Submission:
+
+https://itch.io/jam/2019-siucf-jam-4-final
 
 
 
