@@ -51,7 +51,6 @@ Final Submission:
 https://itch.io/jam/2019-siucf-jam-4-final
 
 
-
 # Important Links
 
 Create a Runnable Jar file:
@@ -65,6 +64,10 @@ https://github.com/libgdx/libgdx/wiki/File-handling
 libGDX Tools
 
 https://libgdx.badlogicgames.com/tools.html
+
+libGDX Tutorials
+
+https://www.gamefromscratch.com/page/LibGDX-Tutorial-series.aspx
 
 # Video Notes
 
