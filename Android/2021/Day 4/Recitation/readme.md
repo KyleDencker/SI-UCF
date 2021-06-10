@@ -1,3 +1,8 @@
+MainScreen.java is the Music Player we made during Recitation
+
+Remember: Music and Sound are different in libGDX. Check the example for more details.
+
+
 Custom Sprites
 ----------------------------
 
