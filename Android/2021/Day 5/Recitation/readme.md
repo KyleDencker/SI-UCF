@@ -20,6 +20,24 @@ In LibGDX, we use the TiledMap and TiledMapRenderer object to draw the map to th
 
 camera viewport width and height may need to be adjusted to fit the map.
 
+Animating a Sprite
+--------------------------
+
+By changing the region of the texture being used by the sprite, we can animate on the fly!
+
+
+sprite.setRegion(xCoord, yCoord, width, height);
+// REMEMBER, (0, 0) is in the top left corner instead of the bottom left corner
+
+-----------------------------
+| o---> positive X
+| |
+| |
+| V 
+| positive y
+|
+|
+|
 
 
 
