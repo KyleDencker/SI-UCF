@@ -25,6 +25,7 @@ Animating a Sprite
 
 By changing the region of the texture being used by the sprite, we can animate on the fly!
 
+When you upload a texture to libGDX, you can instead use a spritesheet that contains many smaller images
 
 sprite.setRegion(xCoord, yCoord, width, height);
 
