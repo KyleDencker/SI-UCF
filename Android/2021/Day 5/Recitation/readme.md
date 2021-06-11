@@ -9,7 +9,7 @@ Instead, we can draw out a map on TILED -> https://www.mapeditor.org/
 
 On TILED, we take elements from a tile set and paint them on various layers of the map.
 
-You can find various TileSets to download here -> https://itch.io/game-assets/tag-tileset
+You can find premade TileSets to download here -> https://itch.io/game-assets/tag-tileset
 
 
 
