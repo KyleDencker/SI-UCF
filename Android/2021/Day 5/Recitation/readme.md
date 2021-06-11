@@ -27,31 +27,10 @@ By changing the region of the texture being used by the sprite, we can animate o
 
 
 sprite.setRegion(xCoord, yCoord, width, height);
-// REMEMBER, (0, 0) is in the top left corner instead of the bottom left corner
 
-__________________________________
+// REMEMBER, (0, 0) is in the top left corner instead of the bottom left corner in this case...
+// Positive X is to the right, Positive Y is down.
 
-
-| o---> positive X
-
-
-| |
-
-
-| |
-
-
-| V 
-
-
-| positive y
-|
-
-
-|
-
-
-|
 
 
 
