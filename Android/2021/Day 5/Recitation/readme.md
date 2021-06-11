@@ -30,13 +30,25 @@ sprite.setRegion(xCoord, yCoord, width, height);
 // REMEMBER, (0, 0) is in the top left corner instead of the bottom left corner
 
 -----------------------------
+
+
 | o---> positive X
 | |
+
+
 | |
+
+
 | V 
+
+
 | positive y
 |
+
+
 |
+
+
 |
 
 
