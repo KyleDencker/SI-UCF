@@ -9,6 +9,10 @@ Instead, we can draw out a map on TILED -> https://www.mapeditor.org/
 
 On TILED, we take elements from a tile set and paint them on various layers of the map.
 
+
+![image](https://user-images.githubusercontent.com/51721851/121947699-585def80-cd24-11eb-9993-d2bd405a4be5.png)
+
+
 You can find premade TileSets to download here -> https://itch.io/game-assets/tag-tileset
 
 
@@ -52,15 +56,6 @@ When you upload a texture to libGDX, you can instead use a spritesheet that cont
 // REMEMBER, (0, 0) is in the top left corner instead of the bottom left corner in this case...
 
 // Positive X is to the right, Positive Y is down.
-
-
-
-
-
-
-
-
-
 
 
 
