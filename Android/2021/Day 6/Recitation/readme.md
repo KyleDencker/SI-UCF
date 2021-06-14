@@ -55,8 +55,35 @@ If we're touching a box, let's go back to where we were at the beginning of the 
  We made another room on TILED, and I wanted to be able to navigate between the two rooms.
  
  I showed off two ways we could accomplish this: 
- 1. The camera follows the player, clamped to the contraints of the map
- 2. The camera remains static, and moves when we walk through a door, like in Binding of Issac.
+ 1.) The camera follows the player, clamped to the contraints of the map
+ 
+ You may want to do this in the y direction as well
+ `camera.position.x = player.getPosition().x;`
+ `camera.position.x = MathUtils.clamp(camera.position.x, min, max);`
+ 
+ 2.) The camera remains static, and moves when we walk through a door, like in Binding of Issac.
+ 
+ ```
+ 
+ if (player.foundDoor())
+		{
+			System.out.println(player.getPosition().x);
+			if (player.getPosition().x < camera.viewportWidth)
+			{
+				camera.position.x += camera.viewportWidth;
+				player.setPosition(other side of the door);
+
+			}
+
+			else
+			{
+				camera.position.x -= camera.viewportWidth;
+				player.setPosition(opposite side of the door);
+			}
+
+			player.foundDoor = false;
+		}
+  ```
 
 The code is separated in two folders, one for each method.
 
