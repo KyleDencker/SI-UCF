@@ -1,4 +1,4 @@
-Bit-Map Fonts are really simple!
+Bitmap Fonts are really simple!
 ----------------------------------
 
 For text that you need to change on the fly, this is your best bet.
