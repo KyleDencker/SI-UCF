@@ -18,7 +18,7 @@ We set up column variable depending on the player's orientation / velocity, and 
 ![Sprite Sheet](https://user-images.githubusercontent.com/51721851/121941015-c1da0000-cd1c-11eb-9037-de028e9a5b7a.png)
 
 
-**We don't want to use setRegion() until after all the logic is done! Calling setRegion() multiple times in a single frame is problematic **
+***We don't want to use setRegion() until after all the logic is done! Calling setRegion() multiple times in a single frame is problematic***
 
 Collision
 -----------------------------------
