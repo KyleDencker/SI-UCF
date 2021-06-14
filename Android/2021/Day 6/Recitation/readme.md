@@ -3,7 +3,7 @@ Tile Map Collision, Sprite Animation, and Camera Magic -
 
 A continuation from Friday's Lecture (day 5) where we introduced Tile Maps, and Sprite Sheets.
 
-*Helpful Links:*
+***Helpful Links:***
 
 TILED Map Editor - https://www.mapeditor.org/
 
