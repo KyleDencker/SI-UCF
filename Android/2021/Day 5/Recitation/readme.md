@@ -18,6 +18,26 @@ You can find premade TileSets to download here -> https://itch.io/game-assets/ta
 
 In LibGDX, we use the TiledMap and TiledMapRenderer object to draw the map to the screen, BEFORE we render the sprite so the sprite can be on top.
 
+```
+// Declare needed variables
+TiledMap tiledMap;
+TiledMapRenderer tiledMapRenderer;
+
+...
+
+// Initialize them
+tiledMap = new TmxMapLoader().load("dungeonTileMap.tmx");
+tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
+
+...
+
+// In render() method before the spritebatch stuff
+camera.update();
+tiledMapRenderer.setView(camera);
+tiledMapRenderer.render();
+
+```
+
 camera viewport width and height may need to be adjusted to fit the map.
 
 Animating a Sprite
@@ -27,7 +47,7 @@ By changing the region of the texture being used by the sprite, we can animate o
 
 When you upload a texture to libGDX, you can instead use a spritesheet that contains many smaller images
 
-sprite.setRegion(xCoord, yCoord, width, height);
+`sprite.setRegion(xCoord, yCoord, width, height);`
 
 // REMEMBER, (0, 0) is in the top left corner instead of the bottom left corner in this case...
 
