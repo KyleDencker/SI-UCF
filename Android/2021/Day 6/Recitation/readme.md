@@ -33,10 +33,10 @@ We extract only the RectangleMapObject objects from the Object Layer, to reduce 
 
 We pass in a LibGDX Array of Rectangle Map objects into our player, so it can determine if it is colliding with anything.
 
+If we're touching a box, let's go back to where we were at the beginning of the frame.
 
+```
 
- ```
- 
  for (RectangleMapObject rectangleObject : array)
  {
             Rectangle rectangle = rectangleObject.getRectangle();
@@ -48,10 +48,20 @@ We pass in a LibGDX Array of Rectangle Map objects into our player, so it can de
             }
   }
         
-  
+ ```
+ 
+ 
+ Camera Stuff
+ ---------------------------
+ We made another room on TILED, and I wanted to be able to navigate between the two rooms.
+ 
+ I showed off two ways we could accomplish this: 
+ 1. The camera follows the player, clamped to the contraints of the map
+ 2. The camera remains static, and moves when we walk through a door, like in Binding of Issac.
 
+The code is separated in two folders, one for each method.
 
-
+The static camera method is a bit more complicated, because we have to handle a separate object layer for doors.
 
 
 
