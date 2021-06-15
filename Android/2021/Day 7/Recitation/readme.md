@@ -1,0 +1,3 @@
+# Recitation Day 7: Interactive Tile Maps #
+
+In this lecture, Mike showed how to add interactive elements to our games such as buttons and doors. We used object layers in Tiled to create rectangular trigger zones for the buttons, and changed parts of the tilemap using `getCell()` and `setTile()`. We were able to link each button to the correct element by adding custom properties to each object in Tiled.

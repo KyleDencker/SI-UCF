@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="16" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="36">
+ <tileset firstgid="1" source="DungeonTileSet.tsx"/>
+ <layer id="1" name="Layer 1" width="16" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+130,130,163,130,130,130,130,130,130,130,130,130,130,132,130,130,
+130,130,130,130,130,130,130,130,130,130,130,163,130,130,130,130,
+130,130,130,130,130,130,130,130,130,130,130,130,130,130,358,130,
+130,130,130,130,130,130,130,130,130,130,130,130,130,130,130,163,
+130,130,130,130,163,130,130,130,130,130,130,132,130,130,130,130,
+130,130,130,130,130,130,130,130,130,130,130,130,130,130,130,130,
+130,131,130,130,130,130,130,130,163,130,130,130,130,130,130,130
+</data>
+ </layer>
+ <layer id="9" name="Layer 2" width="16" height="8">
+  <data encoding="csv">
+357,354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,386,0,0,0,0,0,0,0,0,357,357,0,0,0,
+0,0,0,0,0,386,0,0,0,0,0,357,0,0,0,0,
+0,0,0,0,0,0,0,0,357,357,0,357,0,0,0,0,
+0,0,0,0,0,388,0,0,357,357,0,0,0,357,357,0,
+0,0,0,0,0,0,0,0,357,357,0,0,0,357,357,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Layer 3" width="16" height="8">
+  <data encoding="csv">
+227,3,3,3,3,3,3,3,228,227,3,3,3,3,3,228,
+259,35,35,35,35,35,35,35,293,294,35,35,35,35,35,260,
+258,0,0,0,0,0,0,0,257,258,0,0,0,0,0,257,
+258,0,0,0,0,0,0,0,289,290,0,0,0,0,0,257,
+258,0,0,0,0,0,0,0,0,0,0,0,0,0,0,257,
+258,0,0,0,0,0,0,0,0,0,0,0,0,0,0,257,
+291,3,3,3,3,3,3,3,3,3,3,3,3,3,3,292,
+34,35,35,35,35,35,35,35,35,35,35,35,35,35,35,36
+</data>
+ </layer>
+ <objectgroup id="5" name="Collision">
+  <object id="1" x="0" y="0" width="256" height="24"/>
+  <object id="2" x="0" y="109" width="256" height="20"/>
+  <object id="3" x="0" y="16" width="4" height="96"/>
+  <object id="4" x="252" y="16" width="4" height="96"/>
+  <object id="5" x="140" y="16" width="8" height="48"/>
+ </objectgroup>
+ <objectgroup id="13" name="Spawn">
+  <object id="27" x="32" y="80">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="Spikes">
+  <object id="28" x="128" y="64" width="32" height="48">
+   <properties>
+    <property name="active" type="bool" value="true"/>
+    <property name="id" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="30" x="208" y="80" width="32" height="32">
+   <properties>
+    <property name="active" type="bool" value="true"/>
+    <property name="id" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="33" x="176" y="32" width="32" height="16">
+   <properties>
+    <property name="active" type="bool" value="true"/>
+    <property name="id" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="35" x="176" y="48" width="16" height="32">
+   <properties>
+    <property name="active" type="bool" value="true"/>
+    <property name="id" type="int" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="15" name="Buttons">
+  <object id="29" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="id" type="int" value="0"/>
+    <property name="pressed" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="34" x="32" y="32" width="16" height="16">
+   <properties>
+    <property name="id" type="int" value="2"/>
+    <property name="pressed" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="31" x="80" y="80" width="16" height="16">
+   <properties>
+    <property name="id" type="int" value="1"/>
+    <property name="pressed" type="bool" value="false"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
