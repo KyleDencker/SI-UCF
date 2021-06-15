@@ -14,8 +14,8 @@ someName = new BitMapFont();
 
 
 // In the render method
-BitMapFont.getData().setScale(float to scale by)
-BitMapFont.draw(batch, "string goes here", xCoord, yCoord);
+someName.getData().setScale(float to scale by)
+someName.draw(batch, "string goes here", xCoord, yCoord);
 
 ```
 
