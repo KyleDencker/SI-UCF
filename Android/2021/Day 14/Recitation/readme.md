@@ -1,0 +1,3 @@
+# Recitation Day 14: Win / Lose Screen & Final Touches #
+
+In this lecture, Mike finished up the tank game by adding a winning and losing condition. The game will display the message "You win!" if the player collects over 500 points, and "You lose..." if the enemy reaches 500 points first. We also added some sounds to the game and played around with volume and panning to make them sound more realistic.
